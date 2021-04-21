@@ -11,9 +11,9 @@ The purpose of this application is to scan product barcodes and help the user re
 - Mobile + WEB application interfaces
 
 ### User Stories
-- As a user, I want to be able to scan barcodes and 
+- As a user, I want to be able to scan barcodes and save the location of where the photo was taken.
 - As a user, I want to have my privacy and identity protected. This includes picture metadata such as location and the faces of others in the images taken to be obfuscated. 
-- As a user, I want to be able to edit my saved barcoes. This means I can rate, delete, favorite my saved barcodes.
+- As a user, I want to be able to edit my saved barcodes. This means I can rate, delete, favorite my saved barcodes.
  
 ## Design
 
