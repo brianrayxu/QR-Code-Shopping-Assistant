@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import { RNCamera, FaceDetector } from 'react-native-camera';
-
+import Scanner from "./components/Camera.js"
 
 const styles = StyleSheet.create({
  container: {
@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
    ...StyleSheet.absoluteFillObject,
  },
 });
+
 
 function DetailsScreen() {
   return (
@@ -34,17 +35,6 @@ function DetailsScreen() {
              }}
            >
            </MapView>
-    </View>
-  );
-}
-function CameraScreen({ navigation }) {
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Camera Screen</Text>
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate('Details')}
-      />
     </View>
   );
 }
@@ -73,7 +63,7 @@ function App() {
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Details" component={DetailsScreen} />
-        <Stack.Screen name="Camera" component={CameraScreen} />
+        <Stack.Screen name="Camera" component={Scanner} />
       </Stack.Navigator>
     </NavigationContainer>
   );
