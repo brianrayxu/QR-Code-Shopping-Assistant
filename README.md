@@ -42,7 +42,7 @@ The Map screen does a database call to print all the past markers on the map. Cl
 ### Backend/Persistence
 All persistence is done with Firebase Realtime Database and an interfacing package called "react-native-firebase". For example, when the user opens the map screen, the backend includes a call to Firebase to query for all existing trackers. When the user wants to save a new tracker, a data push is called and upon saving, a new entry with all the metadata and user input data is saved in Firebase.
 
-<img src="Images/testtrackers.PNG" alt="WebRTC" width="200"/>
+<img src="Images/testtracker.PNG" alt="WebRTC" width="200"/>
 
 ## Next Steps
 Due to limited time and resources, there was not enough time to fully flesh out the complete product.
