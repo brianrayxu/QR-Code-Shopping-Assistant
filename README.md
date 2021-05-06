@@ -25,9 +25,7 @@ The home screen allows the user to either view their past markers on the map or 
 ### Camera Screen
 The Camera screen automatically detects QRcodes in the view. Upon detection, the user will be prompted to either ignore or save the QR code.
 
-<img src="Images/Camera.PNG" alt="WebRTC" width="200"/>
-
-<img src="Images/QRsensed.PNG" alt="WebRTC" width="200"/>
+<img src="Images/Camera.PNG" alt="WebRTC" width="200"/> <img src="Images/QRsensed.PNG" alt="WebRTC" width="200"/>
 
 ### New Tracker Screen
 This screen is only accessable upon QR code detection. The user is prompted for a name for the tracker as well as any other information the user wants to include.
