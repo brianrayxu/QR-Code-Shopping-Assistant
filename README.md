@@ -30,7 +30,7 @@ The Camera screen automatically detects QRcodes in the view. Upon detection, the
 ### New Tracker Screen
 This screen is only accessable upon QR code detection. The user is prompted for a name for the tracker as well as any other information the user wants to include.
 
-<img src="Images/NewTracker.PNG" alt="WebRTC" width="200"/>
+<img src="Images/NewTracker.PNG" alt="WebRTC" width="200"/> <img src="Images/newtracker2.PNG" alt="WebRTC" width="200"/>
 
 ### Map Screen
 The Map screen does a database call to print all the past markers on the map. Clicking on each marker also shows the user what they input
