@@ -2,20 +2,44 @@ import React, { Component } from "react";
 import {
   StyleSheet,
   Text,
+  TextInput,
   View,
+  Alert
 } from "react-native";
 import { RNCamera } from "react-native-camera";
+import database from '@react-native-firebase/database';
+import { useNavigation } from '@react-navigation/native';
 
 class Scanner extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      qrcode: ""
+      qrcode: "",
+      latitude: null,
+      longitude: null,
+      error: null,
     };
   }
 
+      createTwoButtonAlert = () =>
+              Alert.alert(
+                  "QRcode sensed",
+                  "Would you like to save?",
+                  [
+                      {text: "Cancel",
+                      onPress: () => Alert.alert("Cancel Pressed"),
+                      style: "cancel",},
+
+                      {text: "Save",
+                      onPress: () => this.props.navigation.navigate('Inputs', { QRcode: this.state.qrcode }),
+                      style: "cancel",}
+                  ]
+              );
+
+
   onBarCodeRead = e => {
     this.setState({ qrcode: e.data });
+    this.createTwoButtonAlert();
   };
 
   render() {
