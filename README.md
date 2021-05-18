@@ -1,4 +1,4 @@
-# EC500-Final-Barcode-Analyzer
+# QR-Code Shopping Assistant
 React Native App that analyzes a camera feed for barcodes and more.
 
 ## Overview
